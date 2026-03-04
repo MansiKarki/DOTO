@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles, LayoutDashboard, MousePointer2, Code2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import bannerImg from '../assets/banner.jpg';
+import bannerImg from '../assets/bann.jpg';
 
 
 
@@ -11,7 +11,7 @@ const HomePage = () => {
 
     return (
 
-        <div className="min-h-screen bg-[#EDEDED] overflow-hidden relative font-sans antialiased flex flex-col justify-center">
+        <div className="min-h-screen bg-[#FFFFFF] overflow-hidden relative font-sans antialiased flex flex-col justify-center">
 
             <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center pt-24 pb-12">
 
@@ -23,9 +23,9 @@ const HomePage = () => {
 
                         <h1 className="text-[80px] lg:text-[100px] font-[900] text-[#0f172a] leading-[0.9] tracking-[-0.06em]">
                             Manage <br />
-                            <span className="text-[#4F46E5] relative">
+                            <span className="text-[#3B82F6] relative">
                                 Energy
-                                <span className="absolute bottom-4 left-0 w-full h-4 bg-indigo-100 -z-10 opacity-60"></span>
+                                <span className="absolute bottom-4 left-0 w-full h-4 bg-blue-100 -z-10 opacity-60"></span>
                             </span>, <br />
                             Not Just Time.
                         </h1>
@@ -40,7 +40,7 @@ const HomePage = () => {
                     <div className="flex flex-wrap items-center gap-8 pt-4">
                         <button
                             onClick={() => navigate('/login')}
-                            className="flex items-center gap-3 px-10 py-5 bg-[#4F46E5] text-white rounded-[24px] text-lg font-bold shadow-2xl shadow-indigo-200 hover:bg-[#4338CA] hover:scale-105 transition-all group active:scale-95"
+                            className="flex items-center gap-3 px-10 py-5 bg-[#3B82F6] text-white rounded-[24px] text-lg font-bold shadow-2xl shadow-blue-200 hover:bg-[#2563EB] hover:scale-105 transition-all group active:scale-95"
                         >
                             Launch Dashboard <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
                         </button>
@@ -68,11 +68,11 @@ const HomePage = () => {
                 </div>
 
                 <div className="relative flex items-center justify-center animate-in fade-in zoom-in duration-1000 delay-300 w-full h-full">
-                    <div className="relative w-full max-w-4xl transition-transform duration-700">
+                    <div className="relative w-full max-w-6xl transition-transform duration-700 lg:scale-[1.3] lg:translate-x-12">
                         <img
                             src={bannerImg}
                             alt="DOTO Banner"
-                            className="w-full h-auto mix-blend-multiply"
+                            className="w-full h-auto mix-blend-multiply filter brightness-[1.08] contrast-[1.02]"
                         />
                     </div>
                 </div>

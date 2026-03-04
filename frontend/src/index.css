@@ -7,7 +7,7 @@
 
   color-scheme: light;
   color: #1e293b;
-  background-color: #EDEDED;
+  background-color: #FFFFFF;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +19,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #EDEDED;
+  background-color: #FFFFFF;
   color: #1e293b;
   overflow-x: hidden;
 }
@@ -145,7 +145,7 @@ input:focus {
 }
 
 button {
-  background: linear-gradient(135deg, #6366f1, #a855f7);
+  background: linear-gradient(135deg, #3B82F6, #2563EB);
   color: white;
   padding: 12px 28px;
   border-radius: 14px;
@@ -154,12 +154,12 @@ button {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   margin: 6px;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
 }
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
   opacity: 0.95;
 }
 
