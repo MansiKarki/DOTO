@@ -46,7 +46,7 @@ const Navbar = () => {
                             <img src={signLogo} alt="DOTO" className="w-full h-full object-contain rounded-lg" />
                         </div>
 
-                        <span className="text-2xl font-black tracking-tighter text-slate-900 uppercase">DOTO</span>
+                        <span className="text-2xl font-black tracking-tighter text-slate-900 uppercase">DO-TO</span>
                     </Link>
                     <div className="hidden xl:block h-6 w-[1.5px] bg-slate-200/60 ml-2"></div>
                 </div>
