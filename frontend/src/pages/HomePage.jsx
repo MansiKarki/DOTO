@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Sparkles, LayoutDashboard, MousePointer2, Code2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import bannerImg from '../assets/bann.jpg';
+import Entrypoint from './Entrypoint';
 
 
 
@@ -94,6 +95,7 @@ const HomePage = () => {
                     font-family: 'Plus Jakarta Sans', sans-serif;
                 }
             `}</style>
+            <Entrypoint />
         </div>
     );
 };

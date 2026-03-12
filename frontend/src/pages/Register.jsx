@@ -37,10 +37,8 @@ const Register = () => {
                 <input name="email" type="email" placeholder="Email Address" onChange={handleChange} required />
                 <input name="password" type="password" placeholder="Create Password" onChange={handleChange} required />
                 <select name="role" onChange={handleChange} style={{ padding: "12px", borderRadius: "8px", margin: "10px 0" }}>
-                    <option value="student">Student</option>
+                    <option value="member">Member</option>
                     <option value="leader">Leader</option>
-                    <option value="founder">Founder</option>
-                    <option value="personal">Personal Account</option>
                 </select>
                 <button type="submit" style={{ width: "100%", marginTop: "10px" }}>Create Account</button>
             </form>

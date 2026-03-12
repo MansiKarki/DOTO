@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import API from "../services/api";
-import MoodSelector from "../components/MoodSelector";
-import OverwhelmButton from "../components/OverwhelmButton";
 
 const Dashboard = () => {
     const [tasks, setTasks] = useState([]);
@@ -18,14 +16,6 @@ const Dashboard = () => {
     return (
         <div className="card" style={{ maxWidth: "700px", margin: "0 auto" }}>
             <h2 className="animate-scale-up">Today's Focus</h2>
-
-            <div style={{ display: "flex", gap: "10px", justifyContent: "center", marginBottom: "20px" }}>
-                <MoodSelector refreshTasks={fetchTasks} />
-            </div>
-
-            <div style={{ marginBottom: "30px" }}>
-                <OverwhelmButton setTasks={setTasks} />
-            </div>
 
             <div style={{ textAlign: "left" }}>
                 <h3 style={{ borderBottom: "1px solid #e2e8f0", paddingBottom: "12px", color: "#64748b", fontSize: "1.1rem" }}>Daily Quests</h3>

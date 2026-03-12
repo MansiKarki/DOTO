@@ -1,22 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import {
-    LayoutDashboard, Users, BarChart3, User, Menu, X
+    LayoutDashboard, Users, BarChart3, User, Menu, X, LogIn
 } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 import signLogo from '../assets/sign.jpg';
 
-
-// Note: In a real app, you'd use 'react-router-dom'. 
-// For this standalone version, we'll mock the Link and useLocation.
-const Link = ({ to, children, className, onClick, style }) => (
-    <a href={to} className={className} onClick={onClick} style={style}>{children}</a>
-);
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    // Mocking location. In real app: const location = useLocation();
-    const [currentPath, setCurrentPath] = useState('/dashboard');
+    const location = useLocation();
+    const currentPath = location.pathname;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -78,7 +72,18 @@ const Navbar = () => {
                     })}
                 </div>
 
-                {/* Simplified Action Zone - Only Mobile Menu Toggle remains */}
+                {/* Desktop Actions */}
+                <div className="hidden lg:flex items-center gap-4">
+                    <Link
+                        to="/login"
+                        className="flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-full font-bold shadow-lg shadow-blue-200 hover:bg-blue-700 hover:scale-105 transition-all active:scale-95"
+                    >
+                        <LogIn size={18} />
+                        <span>Login</span>
+                    </Link>
+                </div>
+
+                {/* Mobile Menu Toggle */}
                 <div className="flex items-center lg:hidden">
                     <button
                         className="p-3 text-slate-600 hover:bg-slate-50 rounded-2xl transition-all active:scale-90"
